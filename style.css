@@ -1,0 +1,458 @@
+/* GERAL */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto', 'sans-serif';
+    background-color: white;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    margin-left: -400px;
+    color: rgba(255, 255, 255, 0);
+}
+h2{
+    font-size: 3.6rem;
+}
+
+.w50{
+    width: 49%;
+}
+.w33{
+    width: 33%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+/* HEADER */
+#header-container{
+    background-color: #FFF7F7;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99999;
+}
+#header{
+    justify-content: center;
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0;
+}
+.header-nav ul{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.header-nav ul li a{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.3rem;
+    font-weight: 600;
+    color: #7ABF48;
+    padding: 8px 50px;
+    margin-right: 10px;
+}
+.header-nav ul li a:hover{
+    border-bottom: solid 3px #7ABF48;
+}
+#cardapio-button{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.3rem;
+    color: white;
+    background-color: #66247B;
+    border: none;
+    border-radius: 40px;
+    padding: 7px 30px;
+    cursor: pointer;
+}
+#cardapio-button:hover{
+    background-color: #7ABF48;
+    box-shadow: 0 0 3px 1px #7ABF48;
+}
+.header-nav-res{
+    text-align: center;
+    width: 100%;
+    display: none;
+}
+.button-res{
+    display: none;
+}
+
+
+/* CAPA */
+#capa-container{
+    background-image: url("imagens/kero-mais-background.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    margin-top: 85px;
+}
+#capa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 1400px;
+    width: 90%;
+    margin: auto;
+    background-image: url("imagens/kero-mais-capa.svg");
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+    height: 730px;
+}
+#capa-button{
+    font-size: 1.8rem;
+    color: white;
+    background-color: #66247B;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    margin-top: 550px;
+    cursor: pointer;
+}
+#capa-button:hover{
+    background-color: #7ABF48;
+    box-shadow: 0 0 3px 1px #7ABF48;
+}
+
+/* SOBRE */
+#sobre-container{
+    background-color: white;
+}
+#sobre{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+#sobre h2{
+    text-align: center;
+    color: #66247B;
+    padding-bottom: 40px;
+}
+#sobre-local{
+    width: 65%;
+    box-shadow: 0 0 5px 2px rgb(61, 61, 61);
+}
+#sobre-dir{
+    font-size: 1.8rem;
+    line-height: 27px;
+}
+
+#opcoes-container{
+    background-color: #66247B;
+}
+#opcoes{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+#opcoes h2{
+    text-align: center;
+    color: white;
+}
+.global-page-container {
+    width: 100%;
+    display: inline-block;
+    margin: auto;
+    height: 100%;
+    text-align: center;
+}
+.watch-slider {
+    padding: 40px 0 40px 0;
+    overflow: hidden;
+}
+.watch-slider .slide {
+    transform: scale(0.9);
+    border: solid 3px white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    outline: none !important;
+}
+
+.arrow {
+    display: inline-block;
+    margin: 0 10px;
+    width: 80px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-position: center;
+    cursor: pointer;
+    vertical-align: middle;
+}
+#arrow-prev{
+    background-image: url('imagens/arrow_prev.svg');
+}
+#arrow-next{
+    background-image: url('imagens/arrow_next.svg');
+}
+  
+
+/* CARDÁPIO */
+#cardapio-container{
+    background-image: url("imagens/kero-mais-background2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#cardapio-container2{
+    padding: 60px 0;
+    background-color: rgba(0, 0, 0, 0.651);
+}
+#cardapio{
+    max-width: 1400px;
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+    display: flex;
+}
+#cardapio-container h2{
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0px 0px 14px #1E1E1E;
+}
+#esq,
+#dir{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#cardapio h3{
+    font-size: 2.3rem;
+    color: white;
+    padding-bottom: 20px;
+}
+.cardapio-box{
+    width: 95%;
+    background-color: #66247B;
+    padding: 0 20px;
+}
+.cardapio-box h4{
+    font-size: 1.6rem;
+    color: white;
+    padding: 20px 0;
+}
+.cardapio-box p{
+    font-size: 14px;
+    color: #E5F304;
+}
+.cardapio-box:last-child{
+    padding-bottom: 20px;
+}
+
+#cardapio-buttons{
+    width: 80%;
+    margin: auto;
+    justify-content: center;
+}
+
+#cardapio-comp-button{
+    margin-right: 25px;
+}
+#pedido-button{
+    margin-left: 25px;
+}
+
+#cardapio-comp-button,
+#pedido-button{
+    background-color: #7ABF48;
+    color: white;
+    border: none;
+    font-size: 1.8rem;
+    padding: 15px 30px;
+    border-radius: 26px;
+    cursor: pointer;
+}
+#cardapio-comp-button:hover,
+#pedido-button:hover{
+    background-color: #66247B;
+    box-shadow: 0 0 3px 1px #66247B;
+}
+
+/* MAPA */
+#mapa{
+    width: 100%;
+    height: 350px;
+    margin: auto;
+}
+
+/* FOOTER */
+#footer-container{
+    background-color: #000000;
+}
+#footer{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+    padding: 25px 0;
+}
+#footer h2{
+    font-size: 2.0rem;
+    color: white;
+    text-align: center;
+}
+#footer p, ul{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+#footer p,
+#footer h2{
+    padding: 5px;
+}
+
+/* COPYRIGHT */
+#copyright-container{
+    background-color: rgba(100, 100, 100, 0.432);
+}
+#copyright{
+    width: 80%;
+    margin: auto;
+    color: rgba(221, 221, 221, 0.849);
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+
+/* RESPONSIVO */
+@media (max-width: 1024px){
+    html{
+        font-size: 56.25%;
+    }
+    .w50{
+        width: 100%;
+    }
+    /*HEADER*/
+    #header-container{
+        background-color: #fff7f7dc;
+    }
+    .button-res{
+        display: block;
+        background-color: #FADDF9;
+        border: #66247B;
+        color:#66247B;
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .mudarCor{
+        color: #7ABF48;
+    }
+    .header-nav{
+        display: none;
+    }
+    .header-nav-res ul li a{
+        display: block;
+        line-height: 60px;
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2.3rem;
+        color: #7ABF48;
+        border: none;
+        cursor: pointer;
+    }
+    /*Botão Active*/
+    .active{
+        display: block;
+    }
+
+    /*CAPA*/
+    #capa-container{
+        margin-top: 75px;
+    }
+    #capa{
+        background-size: 80%;
+        height: 600px;
+    }
+    #capa-button{
+        margin-top: 500px;
+    }
+
+    #sobre-div{
+        flex-direction: column;
+        justify-content: center;
+    }
+    #sobre-esq{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 30px;
+    }
+    #sobre-local{
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    #capa{
+        background-size: 100%;
+        width: 95%;
+    }
+    h2{
+        font-size: 3.0rem;
+    }
+    .w50{
+        width: 100%;
+    }
+    .w33{
+        width: 100%;
+    }
+
+    /*CARDÁPIO*/
+    #cardapio{
+        width: 90%;
+        flex-direction: column;
+        padding: 20px;
+    }
+    #cardapio h3{
+        font-size: 2.3rem;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    #cardapio-comp-button{
+        margin-right: 5px;
+    }
+    #pedido-button{
+        margin-left: 5px;
+    }
+    #cardapio-buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+    #cardapio-comp-button,
+    #pedido-button{
+        padding: 15px 30px;
+        display: block;
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    /* FOOTER */
+    #footer{
+        width: 90%;
+        flex-direction: column;
+    }
+}
